@@ -1,0 +1,45 @@
+#pragma once
+#include <iostream>
+
+using namespace std;
+
+string t1, t2, t3, t4, t5, t6, t7, t8, t9, t10;
+
+void idioma(int leng) {    
+  switch(leng) {
+    case 1:
+      system("cls");
+      t1 = "write your name: ";
+      t2 = "Write your age: ";
+      t3 = "Write the file name: ";
+      t4 = "(by default it'll be: 'invoice')";
+      t5 = "invoice";
+      t6 = " is ok? (y/n) ";
+      t7 = " was created";
+      t8 = "Sorry, there was an error :(";
+    break;
+
+    case 2:
+      system("cls");
+      t1 = "Escribe tu nombre: ";
+      t2 = "Escribe tu edad: ";
+      t3 = "Escribe el nombre del archivo: ";
+      t4 = "(por defecto sera: 'factura')";
+      t5 = "factura";
+      t6 = " es correcto? (y/n) ";
+      t7 = " fue creado";
+      t8 = "Lo sentimos, ha habido un error :(";
+    break;
+    
+    case 3:
+    	system ("cls")
+    	t1= " Écrive ton nom";
+    	t2=" Ecrivez votre age ";
+    	t3= " Écrire le nom du fichier ";
+    	t4= "(Par défaut ce sera: `invoice )'";
+    	t5= "Facture";
+    	t6= "C'est correct? (y / n)";
+    	t7= "a été créé ";
+    	t8= "Désolé, il y a eu une erreur :(";
+  }
+}

@@ -1,0 +1,36 @@
+#include <iostream>
+#include <locale.h>
+#include "lenguaje.h"
+#include "guardar.h"
+
+using namespace std;
+
+// declarar la variable idioma
+int leng;
+
+// prototipos de las funcones: idioma, facturacion y guardar
+void lenguaje (int leng);
+void guardar();
+
+int main () {
+	// poder utilizar caracteres del español
+	setlocale(LC_CTYPE, "Spanish");
+
+	do {
+  	system("cls");
+	  // seleccionar el idioma
+	  cout << "Seleccione el idioma: (Select lenguaje)" << "\n" << endl;
+	  cout << "1. Inglés (English)" << endl;
+		cout << "2. Español (Spanish)" << endl;
+		 cout <<"3. Francés ( French)"<<endl;
+	  cin >> leng;	
+	} while((leng != 1) && (leng != 2) && (leng!=3) );
+
+  // mostar los textos en el idioma seleccionado
+  idioma(leng);
+
+  // guardar los datos de facturacion en un archivo de texto
+  guardar();
+    
+  return 0;
+}

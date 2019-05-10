@@ -1,7 +1,9 @@
+// Joshua Herrera, Kryzia García
+//10-05-2019
 #include <iostream>
-
+setlocale (LC_CTYPE,"SPANISH")
 using namespace std;
-
+//Declaración de variables
 const string empresa = "Hotel CJ Platino.";
 const string dir_empresa = "646 V. 5 NO.1186-A \n CENTRO, MX, 68300";
 const float IVA = 0.16;
@@ -13,8 +15,8 @@ float sub1, sub2, sub3, sub4, sub5, sub6, sub7, sub8, sub9, sub10, subtotal, tot
 int contador = 0;
 
 float 
-	precio1 = 23.10, precio2 = 15.80, precio3 = 32.50, precio4 = 59.50, precio5 = 18.90,
-	precio6 = 21.90, precio7 = 29.80, precio8 = 9.10, precio9 = 4.30, precio10 = 5.10;
+	precio1 = 231.0, precio2 = 158.0, precio3 = 325.0, precio4 = 595.0, precio5 = 189.0,
+	precio6 = 219.0, precio7 = 298.0, precio8 = 910.0, precio9 = 430.0, precio10 = 515.0;
 
 // prototipos de las funciones
 void facturar();
@@ -45,31 +47,31 @@ void facturar () {
 	cout << "Dirección: ";
 	cin.ignore();
 	getline(cin, dir_cliente);
-	
+	// Mostrar opciones
 	do {
 		system("cls");
-		cout << "\nProductos y precio unitario:";
-	  cout << "\n  (1)  Paquete de tostadas 350g         - $" << precio1;
-	  cout << "\n  (2)  Lata de atun 140g                - $" << precio2;
-	  cout << "\n  (3)  Frasco de Mayonesa 390g          - $" << precio3;
-	  cout << "\n  (4)  Papas fritas 340g                - $" << precio4;
-	  cout << "\n  (5)  Leche entera 1L                  - $" << precio5;
-	  cout << "\n  (6)  Paquete de papel higienico       - $" << precio6;
-	  cout << "\n  (7)  Aceite puro de soya 946ml        - $" << precio7;
-	  cout << "\n  (8)  Paquete de Galletas 170g         - $" << precio8;
-	  cout << "\n  (9)  Gelatina de agua 125g            - $" << precio9; 
-	  cout << "\n  (10) Botella de agua 600ml            - $" << precio10;
+		cout << "\nServicios de personalización y precio :";
+	  cout << "\n  (1)  Paredes         - $" << precio1;
+	  cout << "\n  (2)  Muebles                - $" << precio2;
+	  cout << "\n  (3)  Temática         - $" << precio3;
+	  cout << "\n  (4)  Sabanas               - $" << precio4;
+	  cout << "\n  (5)  Piso                  - $" << precio5;
+	  cout << "\n  (6)  Matices       - $" << precio6;
+	  cout << "\n  (7)  Toallas        - $" << precio7;
+	  cout << "\n  (8)  Jabón         - $" << precio8;
+	  cout << "\n  (9)  Baño            - $" << precio9; 
+	  cout << "\n  (10) Cocina           - $" << precio10;
 	  cout << "\n\n  (11) Emitir factura";
-	  cout << "\n\nIngreser los productos a facturar: ";
+	  cout << "\n\nIngreser los servicios a facturar: ";
 	  cin >> opcion;
 		
-		
+	//Iniciar selección multiple	
 		switch(opcion) {
 			case 1:
-				// paquete de tostadas
-				producto = "tostadas";
+				// cambio de paredes
+				producto = "Paredes";
 				
-				cout << "\nIngrese la Cantidad a comprar: ";
+				cout << "\nIngrese la Cantidad de paredes a cambiar: ";
 				cin >> cant1;
 				
 				contador = contador + 1;
@@ -79,8 +81,8 @@ void facturar () {
 			break;
 			
 			case 2:
-				// lata de atun
-				cout << "\nIngrese la Cantidad a comprar: ";
+				// Muebles
+				cout << "\nIngrese la Cantidad de muebles a cambiar: ";
 				cin >> cant2;
 				
 				contador = contador + 1;
@@ -90,8 +92,8 @@ void facturar () {
 			break;
 			
 			case 3:
-				// frasco de mayonesa 
-				cout << "\nIngrese la Cantidad a comprar: ";
+				// Temática
+				cout << "\nIngrese la Cantidad de tematicas a poner: ";
 				cin >> cant3;
 				
 				contador = contador + 1;
@@ -101,8 +103,8 @@ void facturar () {
 			break;
 			
 			case 4:
-				// Papas fritas
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Sabanas
+				cout << "\nIngrese la cantidad a cambiar: ";
 				cin >> cant4;
 				
 				contador = contador + 1;
@@ -112,8 +114,8 @@ void facturar () {
 			break;
 			
 			case 5:
-				// Leche entera
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Piso
+				cout << "\nIngrese la cantidad de tipos a usar: ";
 				cin >> cant5;
 				
 				contador = contador + 1; 
@@ -123,8 +125,8 @@ void facturar () {
 			break;
 			
 			case 6:
-				// papel higienico
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Matiz
+				cout << "\nIngrese la cantidad de colores a combinar: ";
 				cin >> cant6;
 				
 				contador = contador + 1;
@@ -134,8 +136,8 @@ void facturar () {
 			break;
 			
 			case 7:
-				// Aceite puro de soya
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Toallas
+				cout << "\nIngrese la cantidad a cambiar: ";
 				cin >> cant7;
 				
 				contador = contador + 1;
@@ -145,8 +147,8 @@ void facturar () {
 			break;
 			
 			case 8:
-				// paquete de galletas
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Jabón
+				cout << "\nIngrese la cantidad a cambiar: ";
 				cin >> cant8;
 				
 				contador = contador + 1;
@@ -156,8 +158,8 @@ void facturar () {
 			break;
 			
 			case 9:
-				// Gelatina de agua
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Baño
+				cout << "\nIngrese la cantidad interior a cambiar: ";
 				cin >> cant9;
 				
 				contador = contador + 1;
@@ -167,8 +169,8 @@ void facturar () {
 			break;
 			
 			case 10:
-				// botella de agua
-				cout << "\nIngrese la cantidad a comprar: ";
+				// Cocina
+				cout << "\nIngrese la cantidad de objetos a cambiar: ";
 				cin >> cant10;
 				
 				contador = contador + 1;
@@ -178,6 +180,7 @@ void facturar () {
 			break;
 			
 			case 11: 
+			// Sacar total
 				system("cls");
 				
 				subtotal = (sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8 + sub9 + sub10);
@@ -207,7 +210,7 @@ void MostrarDatosDeFactura () {
 	cout << nombre_cliente << endl;
 	cout << fecha_sal << endl;
 	cout << dir_cliente << endl;	
-	
+	// Mostrar total a pagar
 	cout << "\n\nImporte total" << endl;
 	cout << "-------------" << endl;
 	cout << "$" << total << endl;

@@ -1,11 +1,33 @@
 #include <iostream>
-#include "pagospaisesp.h"
+#include <locale.h>
+#include "porpais.h"
+#include "guarda.h"
+#include "leng.h"
+
 using namespace std;
 
-main ()
-{
-	setlocale(LC_CTYPE,"SPANISH");
-	int sele,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13;
+// declarar la variable idioma
+int leng;
+
+// prototipos de las funcones: idioma, facturacion y guardar
+void idioma(int leng);
+void guardar();
+
+int main () {
+	// poder utilizar caracteres del español
+	setlocale(LC_CTYPE, "Spanish");
+
+	do {
+  	system("cls");
+	  // seleccionar el idioma
+	  cout << "Seleccione el idioma: (Select lenguaje)" << "\n" << endl;
+	  cout << "1. Inglés (English)" << endl;
+		cout << "2. Español (Spanish)" << endl;
+	  cin >> leng;	
+	} while((leng != 1) && (leng != 2));
+	// mostar los textos en el idioma seleccionado
+  idioma(leng);
+int sele,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13;
 //	int suiza,canada,alemania,reinou,jap,suecia,australia,eu,fr,mex,nor,fin,es;
 	float t;
 	cout << " "<<" "<<" Seleccione su país"<<endl;
@@ -141,8 +163,14 @@ case 3:
 	cin >>s13;
 	t=es(s13);
 	cout << t <<endl;
-	break;	
-		
-return 0;	
+	break;
 }
+  // guardar los datos de facturacion en un archivo de texto
+  guardar();
+	
+	
+  
+    
+  return 0;
 }
+

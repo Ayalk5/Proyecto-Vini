@@ -1,7 +1,7 @@
-// Joshua Herrera, Kryzia García
+/ Joshua Herrera, Kryzia García
 //10-05-2019
 #include <iostream>
-setlocale (LC_CTYPE,"SPANISH")
+//setlocale (LC_CTYPE,"SPANISH")
 using namespace std;
 //Declaración de variables
 const string empresa = "Hotel CJ Platino.";
@@ -50,6 +50,7 @@ void facturar () {
 	// Mostrar opciones
 	do {
 		system("cls");
+		
 		cout << "\nServicios de personalización y precio :";
 	  cout << "\n  (1)  Paredes         - $" << precio1;
 	  cout << "\n  (2)  Muebles                - $" << precio2;
@@ -221,4 +222,4 @@ void MostrarDatosDeFactura () {
 	
 	cin.ignore();
 	cin.get();
-}	
+}

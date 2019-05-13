@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
 #include <fstream>
-#include "sistemaFactura.h"
-
+#include "cuartoper.h"
+#include "leng.h"
 using namespace std;
 
 // prototipo de la funcion sistemaFactura
@@ -22,27 +22,27 @@ void guardar () {
 
   do {
     system("cls");
-    cout << t3 << endl; // "Escribe el nombre del archivo"
-    cout << t4 << endl; // "(por defecto sera: 'factura')"
+    cout << text3 << endl; // "Escribe el nombre del archivo"
+    cout << text4 << endl; // "(por defecto sera: 'factura')"
     fflush(stdin);
 		getline(cin, Nfile);
     
     if((Nfile == "") || (Nfile == " ")) {
-      Nfile = t5; // Nflie = "factura"
+      Nfile = text5; // Nflie = "factura"
     }
 
     Nfile = Nfile + extn;
   
-    cout << Nfile << t6 << endl; // preguntar si el nombre del archivo es correcto
+    cout << Nfile << text6 << endl; // preguntar si el nombre del archivo es correcto
     cin >> c1;
 
   } while((c1 == 'n') || (c1 == 'N'));
   
-  cout << "\n" << Nfile << t7 << endl; // decir que el archivo fue creado
+  cout << "\n" << Nfile << text7 << endl; // decir que el archivo fue creado
   file.open(Nfile.c_str(), ios::out); // guardar el archivo en la computadora
 
   if(file.fail()) {
-    cout << t8; // "Lo sentimos, ha habido un error :("
+    cout << text8; // "Lo sentimos, ha habido un error :("
     exit(1);
   }
 
@@ -52,7 +52,7 @@ void guardar () {
 	
 	// fecha y numero de facturacion
 	file << "\n" << fecha << endl;
-	file << "No. de húspedes: " << Num_per << endl;
+	file << "No. de huespedes: " << Num_per << endl;
 	
 	// datos del cliente
 	file << "\n\nFacturado a:" << endl;

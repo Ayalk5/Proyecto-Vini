@@ -4,7 +4,7 @@
 //setlocale (LC_CTYPE,"SPANISH")
 using namespace std;
 //Declaración de variables
-const string empresa = "Hotel CJ Platino.";
+const string empresa = "Hotel CJ Platino  Nuestro Hotel, tu mundo.";
 const string dir_empresa = "646 V. 5 NO.1186-A \n CENTRO, MX, 68300";
 const float IVA = 0.16;
 
@@ -29,11 +29,9 @@ void sistemaFactura() {
 
 
 void facturar () {
+		 system("cls");
 	// ------------ ENTRADAS ----------------
-	// pedir la fecha y numero de facturacion
-	cout << "Numero de huespedes: ";
-	cin >> Num_per;
-	
+	// pedir la fecha y numero de la reservación
 	cout << "Fecha de entrada: ";
 	cin >> fecha;
 	cout << "Fecha de salida: ";
@@ -52,17 +50,18 @@ void facturar () {
 		system("cls");
 		
 		cout << "\nServicios de personalización y precio :";
-	  cout << "\n  (1)  Paredes         - $" << precio1;
-	  cout << "\n  (2)  Muebles                - $" << precio2;
-	  cout << "\n  (3)  Temática         - $" << precio3;
-	  cout << "\n  (4)  Sabanas               - $" << precio4;
-	  cout << "\n  (5)  Piso                  - $" << precio5;
-	  cout << "\n  (6)  Matices       - $" << precio6;
+	  cout << "\n  (1)  Paredes        - $" << precio1;
+	  cout << "\n  (2)  Muebles        - $" << precio2;
+	  cout << "\n  (3)  Temática       - $" << precio3;
+	  cout << "\n  (4)  Sabanas        - $" << precio4;
+	  cout << "\n  (5)  Piso           - $" << precio5;
+	  cout << "\n  (6)  Matices        - $" << precio6;
 	  cout << "\n  (7)  Toallas        - $" << precio7;
-	  cout << "\n  (8)  Jabón         - $" << precio8;
-	  cout << "\n  (9)  Baño            - $" << precio9; 
-	  cout << "\n  (10) Cocina           - $" << precio10;
-	  cout << "\n\n  (11) Emitir factura";
+	  cout << "\n  (8)  Jabón          - $" << precio8;
+	  cout << "\n  (9)  Baño           - $" << precio9; 
+	  cout << "\n  (10) Cocina         - $" << precio10;
+	  cout << "\n\n  (11) Emitir factura"<<endl;
+	cout <<"Nota:"<<endl; <<"En caso de no requerir ninguna personalización  emita directamente la factura"<<endl;
 	  cout << "\n\nIngreser los servicios a facturar: ";
 	  cin >> opcion;
 		
@@ -206,7 +205,7 @@ void MostrarDatosDeFactura () {
 	cout << "No. de huespedes: " << Num_per << endl;
 	
 	// mostrar datos del cliente
-	cout << "\n\nFacturado a:" << endl;
+	cout << "\n\ Reservado a:" << endl;
 	cout << "--------------" << endl;
 	cout << nombre_cliente << endl;
 	cout << fecha_sal << endl;
@@ -218,7 +217,7 @@ void MostrarDatosDeFactura () {
 	
 	cout << "\n\nForma de pago" << endl;
 	cout << "--------------" << endl;
-	cout << "Contado" << endl;
+	cout << "Depósito" << endl;
 	
 	cin.ignore();
 	cin.get();

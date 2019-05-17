@@ -61,7 +61,8 @@ void facturar () {
 	  cout << "\n  (9)  Baño           - $" << precio9; 
 	  cout << "\n  (10) Cocina         - $" << precio10;
 	  cout << "\n\n  (11) Emitir factura"<<endl;
-	cout <<"Nota:"<<endl; <<"En caso de no requerir ninguna personalización  emita directamente la factura"<<endl;
+	cout <<"Nota:"<<endl;
+	cout << "En caso de no requerir ninguna personalización  emita directamente la factura"<<endl;
 	  cout << "\n\nIngreser los servicios a facturar: ";
 	  cin >> opcion;
 		
@@ -202,7 +203,6 @@ void MostrarDatosDeFactura () {
 	
 	// mostrar la fecha y numero de facturacion
 	cout << "\n" << fecha << endl;
-	cout << "No. de huespedes: " << Num_per << endl;
 	
 	// mostrar datos del cliente
 	cout << "\n\ Reservado a:" << endl;

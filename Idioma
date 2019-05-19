@@ -10,25 +10,23 @@ void idioma(int leng) {
     case 1:
       system("cls");
       text1 = "write your name: ";
-      text2 = "Write your age: ";
       text3 = "Write the file name: ";
       text4 = "(by default it'll be: 'invoice')";
       text5 = "invoice";
-      text6 = " is ok? (y/n) ";
+      text6 = "The name  is ok? (y/n) ";
       text7 = " was created";
-      text8 = "Sorry, there was an error :(";
+      text8 = "Sorry, we have done something wrong";
     break;
 
     case 2:
       system("cls");
-      text1 = "Escribe tu nombre: ";
-      text2 = "Escribe tu edad: ";
-      text3 = "Escribe el nombre del archivo: ";
-      text4 = "(por defecto sera: 'factura')";
-      text5 = "factura";
-      text6 = " es correcto? (y/n) ";
-      text7 = " fue creado";
-      text8 = "Lo sentimos, ha habido un error :(";
+      text1 = "Escriba su nombre: ";
+      text3 = "Ingrese  el nombre del archivo: ";
+      text4 = "(por defecto sera: 'Detalles')";
+      text5 = "detalles";
+      text6 = "El nombre es correcto? (y/n) ";
+      text7 = "El archivo fue creado";
+      text8 = "Lo sentimos,hemos hecho algo mal ";
     break;
   }
 }

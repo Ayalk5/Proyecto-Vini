@@ -5,17 +5,16 @@
 #include "leng.h"
 using namespace std;
 
-// prototipo de la funcion sistemaFactura
 void sistemaFactura();
 
-// declarar las variables: nombre del archivo, extenciÃ³n del archivo y nombre de la persona
+// declarar las variables: nombre del archivextenciÃ³n vrs
 string Nfile, extn = ".txt";
 
 // declarar la variable para confirmar
 char c1;
 
 void guardar () {
-	// llamar a la funcion para iniciar el proceso de facturacion
+	// llamar a la funcion para iniciar el proceso de compra
 	sistemaFactura(); 
 	
   ofstream file;
@@ -42,7 +41,7 @@ void guardar () {
   file.open(Nfile.c_str(), ios::out); // guardar el archivo en la computadora
 
   if(file.fail()) {
-    cout << text8; // "Lo sentimos, ha habido un error :("
+    cout << text8; // "Error"
     exit(1);
   }
 
@@ -55,7 +54,7 @@ void guardar () {
 	file << "No. de huespedes: " << Num_per << endl;
 	
 	// datos del cliente
-	file << "\n\nFacturado a:" << endl;
+	file << "\n\Reservado a:" << endl;
 	file << "--------------" << endl;
 	file << nombre_cliente << endl;
 	file << fecha_sal << endl;
@@ -67,7 +66,7 @@ void guardar () {
 	
 	file << "\n\nForma de pago" << endl;
 	file << "--------------" << endl;
-	file << "Contado";
+	file << "Deposito";
 
 
   file.close();

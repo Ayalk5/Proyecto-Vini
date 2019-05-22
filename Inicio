@@ -7,7 +7,6 @@
 
 using namespace std;
 
-// declarar la variable idioma
 int leng;
 
 // prototipos de las funcones: idioma, facturacion y guardar
@@ -20,8 +19,7 @@ int main () {
 
 	do {
   	system("cls");
-	  	
-	//C
+	  //C
 // arriba 
    	gotoxy (37,3);
 cout <<"+"<<endl;
@@ -580,15 +578,12 @@ gotoxy (84,4);
 		cout <<"CJ PLATINO.NUESTRO HOTEL, TU MUNDO"<<endl;
 		gotoxy (10,30);
 		cout <<"Presione el   número 1 o 2 para continuar "<<endl;
-	 
 	  cin >> leng;	
-	} 
-	while((leng != 1) && (leng != 2));
+	} while((leng != 1) && (leng != 2));
 
   idioma(leng);
-  //Declaración de variables
+  //declaración de variables
 int sele,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13;
-
 	float t;
  	gotoxy (55,2);
 cout <<"Países disponibles"<<endl;
@@ -621,221 +616,234 @@ gotoxy (35,4);
 	gotoxy (15,12);
 		cout << " "<<" "<<" Seleccione un país:";
 	cin >> sele;
-	//Selección de sucursal
 	switch  (sele){
-
+		//Seleccion de sucursal
+	
+	
 	case 1:
-			 system("cls");
+system("cls");
 		gotoxy (50,5);
 	cout << "Los hoteles disponibles  en Suiza son: "<<endl;
-	gotoxy (5,10);
+gotoxy (5,10);
 	cout <<"1.CJ Platino Suiza Centro"<<endl;
-	gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Suiza Norte"<<endl;
-	gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Suiza Sur "<<endl;
-	gotoxy (30,15);
+gotoxy (30,15);
 	cout <<"Introduzca el número de  una sucursal:";
 	cin >>s1;
 	t=suiza(s1);
-	cout << "El subottal a pagar es: $"<<t <<endl;
+	cout << "El subtotal a pagar es: $"<<t <<endl;
 	system ("pause");
 	break;
 	case 2:
-		 system("cls");
+		system("cls");
 		 	gotoxy (40,5);
 			cout << "Los hoteles disponibles en  Canadá son: "<<endl;
-				gotoxy (5,10);
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Canadá Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Canadá Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Canadá Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s2;
 	t=canada(s2);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout <<"El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 case 3:
-	 system("cls");
+	system("cls");
 	 	gotoxy (40,5);
-			cout <<"Los hoteles disponibles en Alemania son: "<<endl;
-				gotoxy (5,10);
+			cout << "Los hoteles disponibles en Alemania son: "<<endl;
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Alemania Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Alemania Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Alemania Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s3;
 	t=alemania(s3);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 4:
 		 system("cls");
 		 	gotoxy (40,5);
 			cout << "Los hoteles disponibles en Reino Unido son: "<<endl;
-				gotoxy (5,10);
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Reino Unido Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Reino Unido Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Reino Unido Sur "<<endl;
-		gotoxy (30,15);
+gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s4;
 	t=reinou(s4);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 5:
-		 system("cls");
+		system("cls");
 		 	gotoxy (40,5);
-		cout << "Los hoteles disponibles en Japón son: "<<endl;
-			gotoxy (5,10);
+		cout <<"Los hoteles disponibles en Japón son: "<<endl;
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Japón Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Japón  Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Japón  Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s5;
 	t=jap(s5);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 6:
-		 system("cls");
+	 system("cls");
 		 	gotoxy (40,5);
-		cout <<" Los hoteles disponibles en Suecia son: "<<endl;
-			gotoxy (5,10);
+		cout <<"Los hoteles disponibles en Suecia son: "<<endl;
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Suecia Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Suecia Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Suecia Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s6;
 	t=suecia(s6);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 7:
-		 system("cls");
+	 system("cls");
 		 	gotoxy (40,5);
-		cout <<" Los hoteles disponibles en Australia son: "<<endl;
-			gotoxy (5,10);
+		cout << "Los hoteles disponibles en Australia son: "<<endl;
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Australia Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Australia Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Australia Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s7;
 	t=australia(s7);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 8:
-		 system("cls");
+	system("cls");
 		 	gotoxy (40,5);
 		cout << "Los hoteles disponibles en Estados Unidos son: "<<endl;
-			gotoxy (5,10);
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Estados Unidos Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Estados Unidos Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Estados Unidos Sur "<<endl;
-		gotoxy (30,15);
+gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s8;
 	t=eu(s8);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 9: 
-	 system("cls");
+system("cls");
 	 	gotoxy (40,5);
 	cout << "Los hoteles disponibles en Francia son: "<<endl;
-		gotoxy (5,10);
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Francia Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Francia  Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Francia  Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s9;
 	t=fr(s9);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 10:
-		 system("cls");
+	system("cls");
 		 	gotoxy (40,5);
-		cout <<" Los hoteles disponibles en México son: "<<endl;
-			gotoxy (5,10);
+		cout << "Los hoteles disponibles en México son: "<<endl;
+	gotoxy (5,10);
 		cout <<"1.CJ Platino México Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino México Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino México Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s10;
 	t=mex(s10);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 11:
-		 system("cls");
+	system("cls");
 		 	gotoxy (40,5);
 		cout << "Los hoteles disponibles en Noruega son: "<<endl;
-			gotoxy (5,10);
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Noruega Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Noruega Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Noruega Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s11;
 	t=nor(s11);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 12:
-		 system("cls");
+	 system("cls");
 		 	gotoxy (40,5);
 		cout << "Los hoteles disponibles en Finlandia son: "<<endl;
-			gotoxy (5,10);
+	gotoxy (5,10);
 		cout <<"1.CJ Platino Finlandia Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino Finlandia Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino Finlandia Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s12;
 	t=fin(s12);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+	system ("pause");
 	break;
 	case 13:
-		 system("cls");
+	system("cls");
 		 	gotoxy (40,5);
 		cout << "Los hoteles disponibles en España son: "<<endl;
-			gotoxy (5,10);
+gotoxy (5,10);
 		cout <<"1.CJ Platino España Centro"<<endl;
-			gotoxy (55,10);
+gotoxy (55,10);
 	cout <<"2. CJ Platino Platino España Norte"<<endl;
-		gotoxy (95,10);
+gotoxy (95,10);
 	cout << "3.CJ Platino Platino España Sur "<<endl;
-		gotoxy (30,15);
+	gotoxy (30,15);
 		cout <<"Introduzca el número de  una sucursal:";
 	cin >>s13;
 	t=es(s13);
-	cout <<" "<<" "<<" "<<" "<< "El subtotal a pagar es : $"<<t <<endl;
+	cout << "El subtotal a pagar es : $"<<t <<endl;
+system ("pause");
 	break;
 }
   // guardar los datos de facturacion en un archivo de texto
-  guardar();
+  guardar(t);
 	
 	
   

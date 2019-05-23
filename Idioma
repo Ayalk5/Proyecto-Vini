@@ -1,3 +1,4 @@
+//Joshua Nahum Herrera. Kryzia García Romero 212
 #pragma once
 #include <iostream>
 
@@ -9,7 +10,7 @@ void idioma(int leng) {
   switch(leng) {
     case 1:
       system("cls");
-      text1 = "write your name: ";
+    text1 = "write your name: ";
       text3 = "Write the file name: ";
       text4 = "(by default it'll be: 'invoice')";
       text5 = "invoice";
@@ -20,7 +21,7 @@ void idioma(int leng) {
 
     case 2:
       system("cls");
-      text1 = "Escriba su nombre: ";
+    text1 = "Escriba su nombre: ";
       text3 = "Ingrese  el nombre del archivo: ";
       text4 = "(por defecto sera: 'Detalles')";
       text5 = "detalles";

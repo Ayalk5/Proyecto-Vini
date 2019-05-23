@@ -9,7 +9,7 @@ using namespace std;
 
 int leng;
 
-// prototipos de las funcones: idioma, facturacion y guardar
+
 void idioma(int leng);
 void guardar();
 
@@ -850,3 +850,4 @@ system ("pause");
     
   return 0;
 }
+

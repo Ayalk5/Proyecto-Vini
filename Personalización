@@ -31,6 +31,7 @@ void sistemaFactura(float subtotalDeArmando) {
 void facturar (float subtotalDeArmando) {
 	// ------------ ENTRADAS ----------------
 	// pedir la fecha y numero de facturacion
+system ("cls");
 	cout << "Numero de huespedes: ";
 	cin >> Num_per;
 	

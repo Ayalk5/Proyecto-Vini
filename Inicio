@@ -577,7 +577,12 @@ gotoxy (84,4);
 		gotoxy (40,20);
 		cout <<"CJ PLATINO.NUESTRO HOTEL, TU MUNDO"<<endl;
 		gotoxy (10,30);
-		cout <<"Presione el   número 1 o 2 para continuar "<<endl;
+		cout <<"Idiomas disponibles-Available languages"<<endl;
+	gotoxy (10,32);
+		cout << "1.Inglés-English"<<endl;
+		gotoxy (10,33);
+		cout <<"2. Español-Spanish"<<endl;
+		cout <<"Introduzca  un   número  para continuar "<<endl;
 	  cin >> leng;	
 	} while((leng != 1) && (leng != 2));
 

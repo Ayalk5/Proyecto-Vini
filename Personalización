@@ -1,4 +1,3 @@
-//212
 // Joshua Herrera, Kryzia García
 //10-05-2019
 #include <iostream>
@@ -20,19 +19,21 @@ float
 	precio6 = 219.0, precio7 = 298.0, precio8 = 910.0, precio9 = 430.0, precio10 = 515.0;
 
 // prototipos de las funciones
-void facturar();
+void facturar(float subtotal);
 void MostrarDatosDeFactura();
 
 
-void sistemaFactura() {
-	facturar();
+void sistemaFactura(float subtotalDeArmando) {
+	facturar(subtotalDeArmando);
 }
 
 
-void facturar () {
-		 system("cls");
+void facturar (float subtotalDeArmando) {
 	// ------------ ENTRADAS ----------------
-	// pedir la fecha y numero de la reservación
+	// pedir la fecha y numero de facturacion
+	cout << "Numero de huespedes: ";
+	cin >> Num_per;
+	
 	cout << "Fecha de entrada: ";
 	cin >> fecha;
 	cout << "Fecha de salida: ";
@@ -50,7 +51,7 @@ void facturar () {
 	do {
 		system("cls");
 		
-		cout << "\nServicios de personalización y precio :";
+	cout << "\nServicios de personalización y precio :";
 	  cout << "\n  (1)  Paredes        - $" << precio1;
 	  cout << "\n  (2)  Muebles        - $" << precio2;
 	  cout << "\n  (3)  Temática       - $" << precio3;
@@ -188,6 +189,7 @@ void facturar () {
 				subtotal = (sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8 + sub9 + sub10);
 				iva = (subtotal * IVA);
 				total = (subtotal + iva);
+				total = total + subtotalDeArmando;
 				
 				MostrarDatosDeFactura();
 			break;
@@ -204,9 +206,10 @@ void MostrarDatosDeFactura () {
 	
 	// mostrar la fecha y numero de facturacion
 	cout << "\n" << fecha << endl;
+	cout << "No. de huespedes: " << Num_per << endl;
 	
 	// mostrar datos del cliente
-	cout << "\n\ Reservado a:" << endl;
+	cout << "\n\nFacturado a:" << endl;
 	cout << "--------------" << endl;
 	cout << nombre_cliente << endl;
 	cout << fecha_sal << endl;

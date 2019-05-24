@@ -1,74 +1,67 @@
 #pragma once
 #include <iostream>
-#include <fstream>
-#include "cuartoper.h"
-#include "leng.h"
+
 using namespace std;
 
-// función de factura
-void sistemaFactura();
+string text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,text11;
+string text12,text13,text14,text15,text16,text17,text18,text19,text20,text21,text22;
+string text23,text24;
 
-// declarar las variables: nombre del archivo, extenciÃ³n del archivo y nombre de la persona
-string Nfile, extn = ".txt";
+void idioma(int leng) {    
+  switch(leng) {
+    case 1:
+      system("cls");
+    text1 = "write your name: ";
+      text3 = "Write the file name: ";
+      text4 = "(by default it'll be: 'invoice')";
+      text5 = "invoice";
+      text6 = "The name  is ok? (y/n) ";
+      text7 = " was created";
+      text8 = "Sorry, we have done something wrong";
+	  text9="Available countries";
+	 text10="Switzerland";
+	 text11="Canada";
+	 text12="Germany";
+	 text13="United Kingdom";
+	 text14="Japan";
+	 text15="Sweden";
+	 text16="Australia";
+	 text17="United States";
+	 text18="France";
+	 text19="Mexico";
+	 text20="Norway";
+	 text21="Finland";
+	 text22="Spain";
+	 text23="Select a country:";
+	 text24="The hotels available in Switzerland are";
+	break;
 
-// declarar la variable para confirmar
-char c1;
-
-void guardar (float subtotalDeArmando) {
-	// llamar a la funcion para iniciar el proceso de facturacion
-	sistemaFactura(subtotalDeArmando); 
-	
-  ofstream file;
-
-  do {
-    system("cls");
-    cout << text3 << endl; // "Escribe el nombre del archivo"
-    cout << text4 << endl; // "(por defecto sera: 'factura')"
-    fflush(stdin);
-		getline(cin, Nfile);
-    
-    if((Nfile == "") || (Nfile == " ")) {
-      Nfile = text5; // Nflie = "factura"
-    }
-
-    Nfile = Nfile + extn;
-  
-    cout << Nfile << text6 << endl; // preguntar si el nombre del archivo es correcto
-    cin >> c1;
-
-  } while((c1 == 'n') || (c1 == 'N'));
-  
-  cout << "\n" << Nfile << text7 << endl; // decir que el archivo fue creado
-  file.open(Nfile.c_str(), ios::out); // guardar el archivo en la computadora
-
-  if(file.fail()) {
-    cout << text8; // "Lo sentimos, ha habido un error :("
-    exit(1);
+    case 2:
+      system("cls");
+    text1 = "Escriba su nombre: ";
+      text3 = "Ingrese  el nombre del archivo: ";
+      text4 = "(por defecto sera: 'Detalles')";
+      text5 = "detalles";
+      text6 = "El nombre es correcto? (y/n) ";
+      text7 = "El archivo fue creado";
+      text8 = "Lo sentimos,hemos hecho algo mal ";
+	  text9="Países disponibles";
+	  text10="Suiza";
+	  text11="Canadá";
+	  text12="Alemania";
+	  text13="Reino Unido";
+	  text14="Japón";
+	  text15="Suecia";
+	  text16="Australia";
+	  text17="Estados Unidos";
+	  text18="Francia";
+	  text19="México";
+	  text20="Noruega";
+	  text21="Finlandia";
+	  text22="España";
+	  text23=" Seleccione un país:";
+	  text24="Los hoteles disponibles  en Suiza son";
+	//  text25=
+	break;
   }
-
-	// datos de la empresa
-	file << empresa << endl;
-	file << dir_empresa << endl;
-	
-	// fecha y numero de facturacion
-	file << "\n" << fecha << endl;
-	file << "No. de huespedes: " << Num_per << endl;
-	
-	// datos del cliente
-	file << "\n\nFacturado a:" << endl;
-	file << "--------------" << endl;
-	file << nombre_cliente << endl;
-	file << fecha_sal << endl;
-	file << dir_cliente << endl;	
-	
-	file << "\n\nImporte total" << endl;
-	file << "-------------" << endl;
-	file << "$" << total << endl;
-	
-	file << "\n\nForma de pago" << endl;
-	file << "--------------" << endl;
-	file << "Depósito";
-
-
-  file.close();
 }

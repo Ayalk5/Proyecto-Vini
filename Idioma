@@ -4,7 +4,9 @@
 using namespace std;
 
 string text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,text11,text12,text13,text14,text15,text16,text17,text18,text19,text20,text21,text22,
-text23,text24,text25,text26,text27,text28,text29;
+text23,text24,text25,text26,text27,text28,text29,text30,text31,text33,text33,text34,text35,text30,text36,text37,text38,text39,text40,text41,text42,text43,text44,text45,
+text46,text47,text48,text49,text50,text51,text52,text53,text54,text55,text56,text57,text58,text59,text60,text61,text62,text63,text64,text65,text66,text67,text68,
+text69,text70,text61,text62,text63,text64,text65,text66,text67,text68,text69,text70,text71,text72,text73,text74,text75,text76;
 
 void idioma(int leng) {    
   switch(leng) {
@@ -39,6 +41,84 @@ void idioma(int leng) {
 	 text27="South Switzerland";
 	 text28="The subtotal to pay is";
 	 text29="The available hotels in Canada are:";
+	 text29="The available hotels in Canada are:";
+text30=”North Canada;
+text31=”Center Canada”;
+text32=”South Canada”;
+text33=”The available hotels in Germany are:”;
+text34=”North Germany ”;
+text35=”Center Germany”;
+text36=”South Germany”;
+text37=”The available hotels in United Kingdom:”;
+text38=”North”;
+text39=”Center”;
+text40=”South ”;
+text41=”The available hotels in Japan:”;
+text42=”North Japan”;
+text43=”Center Japan”;
+text44=”South Japan”;
+text45=”The available hotels in Sweden”;
+text46=”North Sweden”;
+text47=”Center Sweden”;
+text48=”South Sweden”;
+text49=”The available hotels in Australia”;
+text50=”North Australia”;
+text51=”Center Australia”;
+text52=”South Australia”;
+text53=”The available hotels in United States”;
+text54=”North United States”;
+text55=”Center United States”;
+text56=”South United States”;
+text57=”The available hotels in France”;
+text58=”North France”;
+text59=”Center France”;
+text60=”South France”;
+text61=”The available hotels in Mexico”;
+text62=”Center Mexico”;
+text63=”South Mexico”;
+text64=”North Mexico”;
+text65=”The available hotels in Norway”;
+text66=”South Norway”;
+text67=”Center Norway”;
+text68=”North Norway”;
+text69=”The available hotels in Finland”;
+text70=”North Finland”;
+text71=”South Finland”;
+text72=”Center Finland”;
+text73=”The available hotels in Spain”;
+text74=”North Spain”;
+text75=”Center Spain”;
+text76=”South Spain”;
+n”;
+text77=”Number of guests:”;
+text78=” Date of Entrance:”;
+text79=”Date of Departure:”;
+text80=” Name:”;
+text81=” Address:”;
+text82=”Services of personalization and prices: ”;
+text83=”  Walls            - $”;
+text84=”  Furniture        - $”;
+text85=”  Theme            - $”;
+text86=”  Blankets         - $”;
+text87=”  Floor            - $”;
+text88=”  Colors           - $”;
+text89=”  Towels           - $”;
+text90=”  Soap             - $”;
+text91=”  Bathroom         - $”;
+text92=”  Kitchen          - $”;
+text93=”  Emit Facture”;
+text94=” Note:”;
+text95=” In case of no needing or wanting of the personalization option, please emit the facture immediately”;
+text96=” Enter the services wished: ”;
+text97=”Input the quantity to change:”
+text98=” Factured to:”
+text99=”Total Cost of Services :”;;
+text100=” Payment method”;
+text101=” Deposit ”;
+text102=” Counted”;
+text103=” Input the number of guests:”;
+text104=” Insert the number of days staying at our hotel :”;
+
 	break;
 
     case 2:
@@ -72,7 +152,45 @@ void idioma(int leng) {
 	 text27="Suiza Sur";
 	 text28="El subtotal a pagar es";
 	 text29="Los hoteles disponibles en  Canadá son:";
-	 
+	 text30="Canadá Centro";
+	 text31="Canadá Norte";
+	 text32="Canadá Sur";
+	 text33="Los hoteles disponibles en Alemania son:";
+	 text34="Alemania Centro";
+	 text35="Alemania Norte";
+	 text36="Alemania Sur";
+	 text37="Los hoteles disponibles en Reino Unido son:";
+	 text38="Reino Unido Centro";
+	 text39="Reino Unido Norte";
+	 text40="Reino Unido Sur";
+	 text41="Los hoteles disponibles en Japón son: ";
+	 text42="Japón Centro";
+	 text43="Japón  Norte";
+	 text44="Japón  Sur";
+	 text45="Los hoteles disponibles en Suecia son:";
+	 text46="Suecia Centro";
+	 text47="Suecia Norte";
+	 text48="Suecia Sur";
+	 text49="Los hoteles disponibles en Australia son:";
+	 text50="Australia Centro";
+	 text51="Australia Norte";
+	 text52="Australia Sur";
+	 text53="Los hoteles disponibles en Estados Unidos son:";
+	 text54="Estados Unidos Centro";
+	 text55="Estados Unidos Norte";
+	 text56="Estados Unidos Sur";
+	 text57="Los hoteles disponibles en Francia son:";
+	 //text58=
+	 //text59=
+	 //text60=
+	 //text61=
+	 //text62=
+	 //text63=
+	 //text64=
+	 //text65=
+	 //text66=
+	 //text67=
+	 //text68=
 	break;
   }
 }

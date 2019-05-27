@@ -1,6 +1,8 @@
 // Joshua Herrera, Kryzia García
 //10-05-2019
 #include <iostream>
+#include "leng.h"
+//setlocale (LC_CTYPE,"SPANISH")
 using namespace std;
 //Declaración de variables
 const string empresa = "Hotel CJ Platino  Nuestro Hotel, tu mundo.";
@@ -31,22 +33,20 @@ void facturar (float subtotalDeArmando) {
 	// ------------ ENTRADAS ----------------
 	// pedir la fecha y numero de facturacion
 system ("cls");
-
-cout <<""<<""<<""<<""<<""<< "--Ingrese los datos de detalles de factura--"<<endl;
-	cout << "Numero de huespedes: ";
+	cout << text30;
 	cin >> Num_per;
 	
-	cout << "Fecha de entrada: ";
+	cout << text32;
 	cin >> fecha;
-	cout << "Fecha de salida: ";
+	cout << text33;
 	cin >> fecha_sal;
 	
 	// pedir datos del cliente
-	cout << "Nombre : ";
+	cout << text34;
 	cin.ignore();
 	getline(cin, nombre_cliente);
 		
-	cout << "Dirección: ";
+	cout << text35 ;
 	cin.ignore();
 	getline(cin, dir_cliente);
 	// Mostrar opciones
@@ -54,10 +54,10 @@ cout <<""<<""<<""<<""<<""<< "--Ingrese los datos de detalles de factura--"<<endl
 		system("cls");
 		
 	cout << "\nServicios de personalización y precio :";
-	  cout << "\n  (1)  Paredes        - $" << precio1;
-	  cout << "\n  (2)  Muebles        - $" << precio2;
-	  cout << "\n  (3)  Temática       - $" << precio3;
-	  cout << "\n  (4)  Sabanas        - $" << precio4;
+	  cout << "\n  (1) "<<paredes<<"  - $" << precio1;
+	  cout << "\n  (2)  "<<muebles<<"  - $" << precio2;
+	  cout << "\n  (3)  "<<tematica<<"       - $" << precio3;
+	  cout << "\n  (4)  "<<sabanas<<"        - $" << precio4;
 	  cout << "\n  (5)  Piso           - $" << precio5;
 	  cout << "\n  (6)  Matices        - $" << precio6;
 	  cout << "\n  (7)  Toallas        - $" << precio7;
@@ -224,9 +224,7 @@ void MostrarDatosDeFactura () {
 	cout << "\n\nForma de pago" << endl;
 	cout << "--------------" << endl;
 	cout << "Depósito" << endl;
-	cout << ""<<endl;
-	cout <<""<<endl;
-	cout <<"Presione enter para continuar"<<endl;
+	
 	cin.ignore();
-	cin.get();}
-
+	cin.get();
+}

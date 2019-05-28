@@ -5,7 +5,8 @@ using namespace std;
 
 string text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,text11,text12,text13,text14,text15,text16,text17,text18,text19,text20,text21,text22,
 text23,text24,centro,norte,sur,text28,text29,text30,text31,text32,text33,text34,text35,
-paredes,muebles,tematica,sabanas;
+paredes,muebles,tematica,sabanas,text36,piso, matices,toallas,jabon,bano,cocina,
+servicio,factura, nota,caso,ingrese,cambiar,numero,facturado,importe,forma,depo,selec;
 void idioma(int leng) {    
   switch(leng) {
     case 1:
@@ -49,6 +50,26 @@ void idioma(int leng) {
 	muebles="Furniture";
 	tematica="Thematic";
 	sabanas="Bed sheets";
+	text36="Reservation details";
+	piso="Floor";
+	matices="Shades";
+	toallas="Towels";
+	jabon="Soap";
+	bano="Bathroom";
+	cocina="Kitchen";
+	servicio="Personalization and price services:";
+	factura="Generate bill";
+	nota="Note";
+	caso="If you do not require any personalization, send the invoice directly";
+	ingrese="Enter the services to be invoiced:";
+	cambiar="Enter the amount to change:";
+	numero="Number of guest";
+	facturado="To bind to:";
+	importe="Total amount";
+	forma="Way to pay";
+	depo="Core charge";
+	selec=
+	
 	
 	
 	 
@@ -98,6 +119,25 @@ void idioma(int leng) {
 	 muebles="Muebles";
 	 tematica="Temática";
 	 sabanas="Sábanas";
-	 	break;
+	 text36="Detalles de reservación";
+	 piso="Piso";
+	 matices="Matices";
+	 toallas="Toallas";
+	 jabon="Jabón";
+	 bano="Baño";
+	 cocina="Cocina";
+	 servicio="Servicios de personalización y precio :";
+	 	factura=" Emitir factura";
+	 	nota="Nota";
+	 	caso="En caso de no requerir ninguna personalización  emita directamente la factura";
+	 ingrese="Ingrese los servicios a facturar:";
+	 cambiar="Ingrese la cantidad a cambiar";
+	 numero="Número de huespedes";
+	 facturado="Facturado a:";
+	 importe="Importe total";
+	 forma="Forma de pago";
+	 depo="Depósito";
+	 selec="Presione enter para continuar";
+	 	 	break;
   }
 }

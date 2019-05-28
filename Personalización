@@ -33,6 +33,7 @@ void facturar (float subtotalDeArmando) {
 	// ------------ ENTRADAS ----------------
 	// pedir la fecha y numero de facturacion
 system ("cls");
+cout<<text36<<endl;
 	cout << text30;
 	cin >> Num_per;
 	
@@ -53,21 +54,21 @@ system ("cls");
 	do {
 		system("cls");
 		
-	cout << "\nServicios de personalización y precio :";
-	  cout << "\n  (1) "<<paredes<<"  - $" << precio1;
-	  cout << "\n  (2)  "<<muebles<<"  - $" << precio2;
-	  cout << "\n  (3)  "<<tematica<<"       - $" << precio3;
-	  cout << "\n  (4)  "<<sabanas<<"        - $" << precio4;
-	  cout << "\n  (5)  Piso           - $" << precio5;
-	  cout << "\n  (6)  Matices        - $" << precio6;
-	  cout << "\n  (7)  Toallas        - $" << precio7;
-	  cout << "\n  (8)  Jabón          - $" << precio8;
-	  cout << "\n  (9)  Baño           - $" << precio9; 
-	  cout << "\n  (10) Cocina         - $" << precio10;
-	  cout << "\n\n  (11) Emitir factura"<<endl;
-	cout <<"Nota:"<<endl;
-	cout << "En caso de no requerir ninguna personalización  emita directamente la factura"<<endl;
-	  cout << "\n\nIngreser los servicios a facturar: ";
+	cout << endl<<servicio;
+	  cout << "\n  (1) "<<paredes<<"        -$ "<< precio1;
+	  cout << "\n  (2)  "<<muebles<<"        - $"<< precio2;
+	  cout << "\n  (3)  "<<tematica<<"      - $"<< precio3;
+	  cout << "\n  (4)  "<<sabanas<<"       - $"<< precio4;
+	  cout << "\n  (5)  "<<piso<<"            - $"<< precio5;
+	  cout << "\n  (6)  "<<matices<<"        - $"<< precio6;
+	  cout << "\n  (7)  "<<toallas<<"        - $"<< precio7;
+	  cout << "\n  (8)  "<<jabon<<"          - $"<< precio8;
+	  cout << "\n  (9)  "<<bano<<"           - $"<< precio9; 
+	  cout << "\n  (10) "<<cocina<<"         - $"<< precio10;
+	  cout << "\n\n  (11)"<<factura<<endl;
+	cout <<nota<<endl;
+	cout << caso<<endl;
+	  cout << "\n\n "<<ingrese;
 	  cin >> opcion;
 		
 	//Iniciar selección multiple	
@@ -76,7 +77,7 @@ system ("cls");
 				// cambio de paredes
 				producto = "Paredes";
 				
-				cout << "\nIngrese la Cantidad de paredes a cambiar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant1;
 				
 				contador = contador + 1;
@@ -87,7 +88,7 @@ system ("cls");
 			
 			case 2:
 				// Muebles
-				cout << "\nIngrese la Cantidad de muebles a cambiar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant2;
 				
 				contador = contador + 1;
@@ -98,7 +99,7 @@ system ("cls");
 			
 			case 3:
 				// Temática
-				cout << "\nIngrese la Cantidad de tematicas a poner: ";
+				cout << "\n "<<cambiar;
 				cin >> cant3;
 				
 				contador = contador + 1;
@@ -109,7 +110,7 @@ system ("cls");
 			
 			case 4:
 				// Sabanas
-				cout << "\nIngrese la cantidad a cambiar: ";
+				cout << "\n"<<cambiar;
 				cin >> cant4;
 				
 				contador = contador + 1;
@@ -120,7 +121,7 @@ system ("cls");
 			
 			case 5:
 				// Piso
-				cout << "\nIngrese la cantidad de tipos a usar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant5;
 				
 				contador = contador + 1; 
@@ -131,7 +132,7 @@ system ("cls");
 			
 			case 6:
 				// Matiz
-				cout << "\nIngrese la cantidad de colores a combinar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant6;
 				
 				contador = contador + 1;
@@ -142,7 +143,7 @@ system ("cls");
 			
 			case 7:
 				// Toallas
-				cout << "\nIngrese la cantidad a cambiar: ";
+				cout << "\n"<<cambiar;
 				cin >> cant7;
 				
 				contador = contador + 1;
@@ -153,7 +154,7 @@ system ("cls");
 			
 			case 8:
 				// Jabón
-				cout << "\nIngrese la cantidad a cambiar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant8;
 				
 				contador = contador + 1;
@@ -164,7 +165,7 @@ system ("cls");
 			
 			case 9:
 				// Baño
-				cout << "\nIngrese la cantidad interior a cambiar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant9;
 				
 				contador = contador + 1;
@@ -175,7 +176,7 @@ system ("cls");
 			
 			case 10:
 				// Cocina
-				cout << "\nIngrese la cantidad de objetos a cambiar: ";
+				cout << "\n "<<cambiar;
 				cin >> cant10;
 				
 				contador = contador + 1;
@@ -208,22 +209,22 @@ void MostrarDatosDeFactura () {
 	
 	// mostrar la fecha y numero de facturacion
 	cout << "\n" << fecha << endl;
-	cout << "No. de huespedes: " << Num_per << endl;
+	cout << numero << Num_per << endl;
 	
 	// mostrar datos del cliente
-	cout << "\n\nFacturado a:" << endl;
+	cout << "\n\n"<<facturado << endl;
 	cout << "--------------" << endl;
 	cout << nombre_cliente << endl;
 	cout << fecha_sal << endl;
 	cout << dir_cliente << endl;	
 	// Mostrar total a pagar
-	cout << "\n\nImporte total" << endl;
+	cout << "\n\n"<<importe << endl;
 	cout << "-------------" << endl;
 	cout << "$" << total << endl;
 	
-	cout << "\n\nForma de pago" << endl;
+	cout << "\n\n"<<forma << endl;
 	cout << "--------------" << endl;
-	cout << "Depósito" << endl;
+	cout << depo << endl;
 	
 	cin.ignore();
 	cin.get();

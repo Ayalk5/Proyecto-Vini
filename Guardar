@@ -56,7 +56,7 @@ void guardar (float subtotalDeArmando) {
   //	return (idioma);
   }
   else {
-system("exit");
+system("close");
   }
 
 	// datos de la empresa
@@ -65,22 +65,22 @@ system("exit");
 	
 	// fecha y numero de facturacion
 	file << "\n" << fecha << endl;
-	file << "No. de huespedes: " << Num_per << endl;
+	file << numero << Num_per << endl;
 	
 	// datos del cliente
-	file << "\n\nFacturado a:" << endl;
+	file << "\n\n"<<facturado << endl;
 	file << "--------------" << endl;
 	file << nombre_cliente << endl;
 	file << fecha_sal << endl;
 	file << dir_cliente << endl;	
 	
-	file << "\n\nImporte total" << endl;
+	file << "\n\n"<<importe << endl;
 	file << "-------------" << endl;
 	file << "$" << total << endl;
 	
-	file << "\n\nForma de pago" << endl;
+	file << "\n\n"<<forma << endl;
 	file << "--------------" << endl;
-	file << "Depósito";
+	file << depo;
 
 
   file.close();
